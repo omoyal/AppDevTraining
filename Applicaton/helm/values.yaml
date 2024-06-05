@@ -1,9 +1,8 @@
 ReplicaNumber: 3
-  
+
 containers:
   containerPort: 8080
   image: 'quay.io/omoyal/webapplication:v2'
-  tag: 'base'
 
 service:
   servicePort: 8080
