@@ -22,8 +22,8 @@ spec:
           terminationMessagePath: /dev/termination-log
           name: {{ .Chart.Name }}
           ports:
-            - containerPort: {{ .Values.containers.containerPort }}
-              protocol: TCP
+          - containerPort: {{ .Values.containers.containerPort }}
+            protocol: TCP
           imagePullPolicy: Always
           terminationMessagePolicy: File
           image: {{ .Values.containers.image }}:{{ .Values.containers.tag }}
